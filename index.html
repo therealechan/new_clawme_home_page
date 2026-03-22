@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>ClawMe.ai - Chat your way to a stunning personal page</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .text-gradient {
+      background: linear-gradient(90deg, #F97316 0%, #FB923C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-bg {
+      background: radial-gradient(circle at top right, rgba(254, 215, 170, 0.4) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-900 antialiased overflow-x-hidden">
+
+<!-- Header -->
+<header class="py-6 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto flex items-center justify-between z-50 relative">
+  <a class="flex items-center gap-2" href="#">
+    <div class="w-8 h-8 bg-orange-500 rounded-md flex items-center justify-center text-white font-bold text-xl overflow-hidden">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd" d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248z" fill-rule="evenodd"></path>
+        <path d="M10.13 12.186a1.5 1.5 0 10-1.821-2.484 1.5 1.5 0 001.821 2.484zM15.87 12.186a1.5 1.5 0 10-1.821-2.484 1.5 1.5 0 001.821 2.484z"></path>
+      </svg>
+    </div>
+    <span class="font-bold text-xl tracking-tight">ClawMe.ai</span>
+  </a>
+  <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
+    <a href="#why-clawme" class="hover:text-slate-900 transition-colors">Why ClawMe?</a>
+    <a href="#showcase" class="hover:text-slate-900 transition-colors">Showcase</a>
+    <a href="https://clawme.ai" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-5 rounded-full transition-colors">Get Started</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-bg pt-12 pb-24 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto relative">
+  <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <div class="max-w-xl relative z-10">
+      <span class="inline-block text-xs font-semibold tracking-widest text-orange-500 uppercase mb-4">YOUR PERSONAL PAGE AI ASSISTANT</span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+        Chat a little,<br/><span class="text-gradient">page goes live.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-600 mb-8">
+        No templates, no dragging components around. Just tell me about yourself — your personal page will be live in minutes!
+      </p>
+      <div class="bg-white p-2 rounded-full shadow-lg border border-slate-100 flex items-center max-w-md">
+        <div class="pl-4 flex-grow flex items-center text-slate-500">
+          <span class="font-medium mr-1">clawme.ai/</span>
+          <input class="w-full bg-transparent border-none focus:ring-0 text-slate-900 placeholder:text-slate-400 p-0 h-full text-lg outline-none" placeholder="your-name" type="text"/>
+        </div>
+        <a href="https://clawme.ai" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full transition-colors whitespace-nowrap">
+          Create Mine
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero visual: mock browser window -->
+    <div class="relative z-10 hidden md:flex justify-end">
+      <div class="w-full max-w-lg bg-slate-50 rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+        <!-- Browser chrome -->
+        <div class="bg-slate-100 px-4 py-3 flex items-center gap-2 border-b border-slate-200">
+          <div class="w-3 h-3 rounded-full bg-red-400"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+          <div class="w-3 h-3 rounded-full bg-green-400"></div>
+          <div class="flex-grow mx-4 bg-white rounded-md px-3 py-1 text-xs text-slate-400 border border-slate-200">clawme.ai/your-name</div>
+        </div>
+        <!-- Chat UI mockup -->
+        <div class="p-6 space-y-4 min-h-[280px]">
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">AI</div>
+            <div class="bg-white rounded-2xl rounded-tl-none px-4 py-3 text-sm text-slate-700 shadow-sm border border-slate-100 max-w-xs">
+              Hey! Tell me a bit about yourself — what do you do, what are you proud of?
+            </div>
+          </div>
+          <div class="flex gap-3 flex-row-reverse">
+            <div class="w-8 h-8 bg-slate-200 rounded-full flex-shrink-0"></div>
+            <div class="bg-orange-500 rounded-2xl rounded-tr-none px-4 py-3 text-sm text-white max-w-xs">
+              I'm a product designer who loves clean UIs and hiking on weekends.
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div class="w-8 h-8 bg-orange-500 rounded-full flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">AI</div>
+            <div class="bg-white rounded-2xl rounded-tl-none px-4 py-3 text-sm text-slate-700 shadow-sm border border-slate-100 max-w-xs">
+              🎉 Your page is live! <span class="text-orange-500 font-medium">clawme.ai/your-name</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Creations Section -->
+<section id="showcase" class="py-20 px-4 md:px-8 lg:px-12 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">Built with ClawMe</h2>
+      <p class="text-slate-500">See what others have created</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Card 1: QuickShow -->
+      <div class="group flex flex-col items-center">
+        <div class="bg-slate-100 rounded-3xl p-6 pb-0 mb-6 w-full aspect-[4/5] flex justify-center items-end overflow-hidden">
+          <div class="w-full max-w-[240px] shadow-2xl rounded-t-3xl border-4 border-b-0 border-slate-800 bg-white overflow-hidden h-[90%] group-hover:translate-y-2 transition-transform duration-300">
+            <div class="bg-slate-900 h-8 flex items-center px-3 gap-1.5">
+              <div class="w-2 h-2 rounded-full bg-red-400"></div>
+              <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+              <div class="w-2 h-2 rounded-full bg-green-400"></div>
+            </div>
+            <div class="p-4 text-center">
+              <div class="w-12 h-12 bg-blue-100 rounded-full mx-auto mb-3 flex items-center justify-center text-blue-600 font-bold text-lg">Q</div>
+              <div class="font-bold text-sm mb-1">QuickShow</div>
+              <div class="text-xs text-slate-500 mb-3">Brand Your Brand</div>
+              <div class="space-y-2">
+                <div class="h-2 bg-slate-100 rounded-full"></div>
+                <div class="h-2 bg-slate-100 rounded-full w-3/4 mx-auto"></div>
+                <div class="h-2 bg-slate-100 rounded-full w-1/2 mx-auto"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="font-bold text-lg mb-1 text-center">QuickShow</h3>
+        <p class="text-slate-500 text-center">www.quickshow.com</p>
+      </div>
+
+      <!-- Card 2: atax.clawme.ai -->
+      <div class="group flex flex-col items-center">
+        <div class="bg-emerald-50 rounded-3xl p-6 pb-0 mb-6 w-full aspect-[4/5] flex justify-center items-end overflow-hidden">
+          <div class="w-full max-w-[240px] shadow-2xl rounded-t-3xl border-4 border-b-0 border-slate-800 bg-white overflow-hidden h-[90%] group-hover:translate-y-2 transition-transform duration-300">
+            <div class="bg-slate-900 h-8 flex items-center px-3 gap-1.5">
+              <div class="w-2 h-2 rounded-full bg-red-400"></div>
+              <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+              <div class="w-2 h-2 rounded-full bg-green-400"></div>
+            </div>
+            <div class="p-4 text-center">
+              <div class="w-12 h-12 bg-emerald-100 rounded-full mx-auto mb-3 flex items-center justify-center text-emerald-600 font-bold text-lg">A</div>
+              <div class="font-bold text-sm mb-1">ATAX</div>
+              <div class="text-xs text-slate-500 mb-3">专业保健品 OEM/ODM</div>
+              <div class="space-y-2">
+                <div class="h-2 bg-slate-100 rounded-full"></div>
+                <div class="h-2 bg-slate-100 rounded-full w-3/4 mx-auto"></div>
+                <div class="h-2 bg-slate-100 rounded-full w-1/2 mx-auto"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="font-bold text-lg mb-1 text-center">ATAX</h3>
+        <p class="text-slate-500 text-center">atax.clawme.ai</p>
+      </div>
+
+      <!-- Card 3: Leon Du -->
+      <div class="group flex flex-col items-center">
+        <div class="bg-orange-50 rounded-3xl p-6 pb-0 mb-6 w-full aspect-[4/5] flex justify-center items-end overflow-hidden">
+          <div class="w-full max-w-[240px] shadow-2xl rounded-t-3xl border-4 border-b-0 border-slate-800 bg-white overflow-hidden h-[90%] group-hover:translate-y-2 transition-transform duration-300">
+            <div class="bg-slate-900 h-8 flex items-center px-3 gap-1.5">
+              <div class="w-2 h-2 rounded-full bg-red-400"></div>
+              <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+              <div class="w-2 h-2 rounded-full bg-green-400"></div>
+            </div>
+            <div class="p-4 text-center">
+              <div class="w-12 h-12 bg-orange-100 rounded-full mx-auto mb-3 flex items-center justify-center text-orange-600 font-bold text-lg">L</div>
+              <div class="font-bold text-sm mb-1">Leon Du</div>
+              <div class="text-xs text-slate-500 mb-3">Founder & CEO · Portfolio</div>
+              <div class="space-y-2">
+                <div class="h-2 bg-slate-100 rounded-full"></div>
+                <div class="h-2 bg-slate-100 rounded-full w-3/4 mx-auto"></div>
+                <div class="h-2 bg-slate-100 rounded-full w-1/2 mx-auto"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="font-bold text-lg mb-1 text-center">Leon Du</h3>
+        <p class="text-slate-500 text-center">clawme.ai/leondu</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why ClawMe Section -->
+<section id="why-clawme" class="py-24 px-4 md:px-8 lg:px-12 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Why ClawMe?</h2>
+      <p class="text-slate-500 text-lg">Building a personal page shouldn't be hard.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Feature 1 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-3">Say it, see it</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Describe your page like you're talking to a friend. No jargon, no drag-and-drop — the AI listens and builds.</p>
+      </div>
+      <!-- Feature 2 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-3">Live in minutes</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Go from zero to published in under five minutes. Want changes? Just say so.</p>
+      </div>
+      <!-- Feature 3 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.401.604-.401.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.959.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-3">One of a kind</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Every page is generated from scratch based on your words — not picked from a template gallery.</p>
+      </div>
+      <!-- Feature 4 -->
+      <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-3">SEO & AI-Ready</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Every page is automatically optimized for search engines (SEO) and AI citations (GEO) — so Google finds you, and ChatGPT can introduce you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-12 px-4 md:px-8 lg:px-12 mb-12">
+  <div class="max-w-4xl mx-auto bg-orange-100 rounded-[2.5rem] p-10 md:p-16 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+      Ready for your own page?
+    </h2>
+    <p class="text-slate-600 text-lg mb-8">No technical skills needed. Just one conversation.</p>
+    <a href="https://clawme.ai" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-full transition-colors text-lg inline-block">
+      Create My Page Free
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+  <div>© 2026 ClawMe. All rights reserved.</div>
+  <div class="flex gap-6">
+    <a class="hover:text-slate-900 transition-colors" href="#">Blog</a>
+    <a class="hover:text-slate-900 transition-colors" href="#">Terms</a>
+    <a class="hover:text-slate-900 transition-colors" href="#">Privacy</a>
+  </div>
+</footer>
+
+</body>
+</html>
